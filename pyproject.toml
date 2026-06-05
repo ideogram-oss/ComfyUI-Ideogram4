@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ideogram4-comfy"
+version = "0.1.0"
+description = "ComfyUI custom nodes for Ideogram 4.0 image generation."
+readme = "README.md"
+license = { file = "LICENSE.md" }
+requires-python = ">=3.10"
+authors = [{ name = "Ideogram" }]
+keywords = ["comfyui", "ideogram", "text-to-image", "image-generation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Environment :: GPU :: NVIDIA CUDA",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Repository = "https://github.com/ideogram-oss/ComfyUI-Ideogram4"
+Documentation = "https://github.com/ideogram-oss/ComfyUI-Ideogram4#readme"
+"Bug Tracker" = "https://github.com/ideogram-oss/ComfyUI-Ideogram4/issues"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.comfy]
+PublisherId = "ideogram-ai"
+DisplayName = "Ideogram 4.0"

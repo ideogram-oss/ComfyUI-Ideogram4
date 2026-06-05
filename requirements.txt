@@ -1,0 +1,3 @@
+ideogram-4 @ git+https://github.com/ideogram-oss/ideogram-4.git
+numpy
+requests>=2.28
