@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ideogram4-comfy"
-version = "0.1.0"
+version = "0.1.1"
 description = "ComfyUI custom nodes for Ideogram 4.0 image generation."
 readme = "README.md"
 license = { file = "LICENSE.md" }
@@ -37,3 +37,4 @@ dependencies = { file = ["requirements.txt"] }
 [tool.comfy]
 PublisherId = "ideogram-ai"
 DisplayName = "Ideogram 4.0"
+Icon = "https://raw.githubusercontent.com/ideogram-oss/ComfyUI-Ideogram4/main/assets/icon.svg"
